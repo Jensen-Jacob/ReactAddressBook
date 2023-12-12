@@ -125,8 +125,8 @@ function App() {
   }
 
   return (
-    <div className="App h-screen">
-      <div className="container  m-auto w-200 p-4">
+    <div className="App h-screen bg-bg_img bg-cover">
+      <div className="container m-auto w-200 p-4">
         <Nav />
         {showAlert && alertText.length > 0 ? (
           <SuccessAlert onShowAlert={handleShowAlert}>{alertText}</SuccessAlert>
