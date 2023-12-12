@@ -65,13 +65,13 @@ export default function SearchForm({
             </option>
           </select>
         </div>
-        <button
+        <Button
           type="button"
           className="w-full flex p-2 rounded text-sm justify-center bg-orange-300 hover:bg-orange-400 md:flex-none md:w-fit md:text-base lg:text-lg"
           onClick={onShowAddContact}
         >
           <span className="text-center">Add Contact</span>
-        </button>
+        </Button>
       </form>
     </div>
   );
