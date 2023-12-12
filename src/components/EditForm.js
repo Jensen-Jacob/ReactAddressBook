@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Button } from "./Button";
 
 export function EditForm({
   onShowEditForm,
@@ -111,12 +112,12 @@ export function EditForm({
             className="rounded p-1 border border-solid border-black lg:w-full md:text-lg"
             required
           />
-          <button
+          <Button
             type="submit"
-            className="bg-orange-300 p-2 rounded text-base hover:bg-orange-400 mt-4 lg:w-full md:text-lg"
+            classes="bg-orange-300 p-2 rounded text-base hover:bg-orange-400 mt-4 lg:w-full md:text-lg"
           >
             Save Changes
-          </button>
+          </Button>
         </form>
       </div>
     </>

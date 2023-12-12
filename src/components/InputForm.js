@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Button } from "./Button";
 
 export default function InputForm({
   onShowAddContact,
@@ -117,12 +118,12 @@ export default function InputForm({
             onChange={(e) => setPostalCode(e.target.value)}
             required
           />
-          <button
+          <Button
             type="submit"
-            className="bg-orange-300 p-2 rounded text-base hover:bg-orange-400 mt-4 lg:w-full md:text-lg"
+            classes="bg-orange-300 p-2 rounded text-base hover:bg-orange-400 mt-4 lg:w-full md:text-lg"
           >
             Add contact
-          </button>
+          </Button>
         </form>
       </div>
     </>

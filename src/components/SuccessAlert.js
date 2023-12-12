@@ -1,3 +1,5 @@
+import { Button } from "./Button";
+
 export default function SuccessAlert({ onShowAlert, children }) {
   return (
     <div
@@ -5,14 +7,14 @@ export default function SuccessAlert({ onShowAlert, children }) {
       role="alert"
     >
       <span className="font-medium">{children[0]}</span> {children[1]}
-      <button
+      <Button
         type="button"
-        className="text-sm md:text-base lg:text-lg justify-self-end"
-        onClick={() => onShowAlert([])}
+        classes="text-sm md:text-base lg:text-lg justify-self-end"
+        onClickMethod={() => onShowAlert([])}
       >
         {" "}
         X{" "}
-      </button>
+      </Button>
     </div>
   );
 }

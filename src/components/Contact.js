@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { EditForm } from "./EditForm";
+import { Button } from "./Button";
 
 export function Contact({
   contact,
@@ -39,23 +40,23 @@ export function Contact({
           Postal Code: {contact.postalCode}
         </span>
         <div>
-          <button
+          <Button
             type="button"
-            className="w-full flex flex-1 flex-grow my-1 p-2 px-4 rounded text-sm justify-center bg-orange-300 hover:bg-orange-400  md:text-base md:mr-1 lg:mr-0 lg:text-lg"
-            onClick={handleShowEditForm}
+            classes="w-full flex flex-1 flex-grow my-1 p-2 px-4 rounded text-sm justify-center bg-orange-300 hover:bg-orange-400  md:text-base md:mr-1 lg:mr-0 lg:text-lg"
+            onClickMethod={handleShowEditForm}
           >
             Edit
-          </button>
-          <button
+          </Button>
+          <Button
             type="button"
-            className="w-full flex flex-1 flex-grow p-2 rounded text-sm text-white justify-center bg-red-600 hover:bg-red-700  md:text-base lg:text-lg"
-            onClick={() => {
+            classes="w-full flex flex-1 flex-grow p-2 rounded text-sm text-white justify-center bg-red-600 hover:bg-red-700  md:text-base lg:text-lg"
+            onClickMethod={() => {
               onDeleteContact(contact.id);
               onShowAlert(["Success!", "Contact Deleted Successfuly!"]);
             }}
           >
             Delete
-          </button>
+          </Button>
         </div>
       </li>
     </>
